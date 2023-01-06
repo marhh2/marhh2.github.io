@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    font-size: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.scoreboard{
+    flex: 1;
+    height: 565px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.scoreboard2{
+    flex: 1;
+    height: 565px;
+    background-color: #222325;
+    margin: 0 auto;
+}
+
+.scoreboard__right{
+    width: 100px; 
+    height: 315px; 
+    left: 20%; 
+    top: 120px;
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: black;
+    color:white;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.scoreboard__left{
+    left: 70%; 
+    width: 100px; 
+    height: 315px; 
+    top: 120px; 
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #222325;
+    color:white;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.scoreboard__player{
+    margin-top:507px;
+    line-height: 24px;
+}
+
+.scoreboard__one{
+    display: flex;
+}
+
+.scoreboard__two{
+    display: flex;
+    margin-top: -20px;
+}
+
+.scoreboard__name{
+    width: 100%;
+    height: 24px;
+    padding-left: 4px;
+    color: white;
+    background: #222325;
+    text-align: left;
+}
+
+.scoreboard__name2{
+    width: 100%;
+    height: 24px;
+    padding-right: 4px;
+    color: white;
+    background: #535456;
+    text-align: right;
+}
+
+.scoreboard__type{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background: #FFD600;
+}
+
+@media (min-width:360px){
+    .container{
+        display: flex;
+    }
+}
