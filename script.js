@@ -1,5 +1,5 @@
-const pilihan = Array.from(document.getElementsByClassName('scoreboard_score'));
-pilihan.forEach((e)=>{
+const choose = Array.from(document.getElementsByClassName('scoreboard_score'));
+choose.forEach((e)=>{
     e.addEventListener('touchstart', event=> {
       touchstartX = event.changedTouches[0].screenX;
       touchstartY = event.changedTouches[0].screenY;
