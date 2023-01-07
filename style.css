@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root {
+    /* Colors */
+    --gray001 : #1E1E1E;
+    --gray002: #222325;
+    --gray003: #535456;
+    --black: #000000;
+    --white: #FFFFFF;
+    --yellow: #FFD600;
+}
+
 body{
     font-family: 'Inter', sans-serif;
     overflow: hidden;
@@ -14,57 +24,57 @@ body{
 .scoreboard{
     flex: 1;
     height: 565px;
-    background-color: black;
     margin: 0 auto;
-}
-
-.scoreboard2{
-    flex: 1;
-    height: 565px;
-    background-color: #222325;
-    margin: 0 auto;
+    background-color: var(--gray001);
 }
 
 .scoreboard__right{
     width: 100px; 
     height: 315px; 
-    left: 20%; 
+    left: 18%; 
     top: 120px;
     font-size: 80px;
-    font-weight: bold;
+    font-weight: 700;
     position: absolute; 
     z-index: 1;
     overflow: hidden;
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color: black;
-    color:white;
+    background-color: var(--gray001);
+    color: var(--white);
     cursor: pointer;
 
+}
+
+.scoreboard2{
+    flex: 1;
+    height: 565px;
+    margin: 0 auto;
+    background-color: var(--gray002);
 }
 
 .scoreboard__left{
     width: 100px; 
     height: 315px; 
-    left: 70%; 
+    left: 68%; 
     top: 120px; 
     font-size: 80px;
-    font-weight: bold;
+    font-weight: 700;
     position: absolute; 
     z-index: 1;
     overflow: hidden;
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color: #222325;
-    color:white;
+    background-color: var(--gray002);
+    color: var(--white);
     cursor: pointer;
 
 }
 
 .scoreboard__player{
-    margin-top:507px;
+    margin-top:510px;
 }
 
 .scoreboard__one{
@@ -77,27 +87,25 @@ body{
 }
 
 .scoreboard__name{
-    color: white;
     line-height: 24px;
     width: 100%;
     height: 24px;
-    left: 0px;
-    top: 312px;
-    background: #222325;
+    top: 320px;
     padding-left: 4px;
     text-align: left;
+    color: var(--white);
+    background: var(--gray002);
 }
 
 .scoreboard__name2{
-    color: white;
     line-height: 24px;
     width: 100%;
     height: 24px;
-    left: 156px;
     top: 312px;
-    background: #535456;
     padding-right: 4px;
     text-align: right;
+    color: var(--white);
+    background: var(--gray003);
 }
 
 .scoreboard__type{
@@ -107,11 +115,17 @@ body{
     height: 24px;
     left: 156px;
     top: 0px;
-    background: #FFD600;
+    background: var(--yellow);
 }
 
-@media (min-width:360px){
-    .container{
-        display: flex;
+@media (max-width:360) {
+    .scoreboard__right{
+        position: absolute;
+        left: auto;
+    }
+
+    .scoreboard__left{
+        position: absolute;
+        left: auto;
     }
 }
