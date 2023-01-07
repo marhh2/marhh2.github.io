@@ -27,7 +27,7 @@ function mouseSwipped() {
             if(mouseupY < mousedownY && choose < 25) {
                 let content = choose + 1;
                 if (content < 10) {
-                  e.innerHTML = `0${content}`;
+                  e.innerHTML = `${content}`;
                 } else {
                   e.innerHTML = content;
                 }
@@ -35,7 +35,7 @@ function mouseSwipped() {
               if(mouseupY > mousedownY && choose > 0) {
                 let content = choose - 1;
                 if (content < 10) {
-                  e.innerHTML = `0${content}`;
+                  e.innerHTML = `${content}`;
                 } else {
                   e.innerHTML = content;
                 }
@@ -47,7 +47,7 @@ function touchSwipped() {
         if(touchendY < touchstartY && choose<25) {
             let content = choose+1;
             if(content<10){
-                e.innerHTML = `0${content}`;
+                e.innerHTML = `${content}`;
             }
             else{
                 e.innerHTML = content;
@@ -56,7 +56,7 @@ function touchSwipped() {
         if(touchendY > touchstartY && choose>0) {  
             let content = choose-1;
             if(content<10){
-                e.innerHTML = `0${content}`;
+                e.innerHTML = `${content}`;
             }
             else{
             e.innerHTML = content;
