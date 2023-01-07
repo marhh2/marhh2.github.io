@@ -31,7 +31,7 @@ body{
 .scoreboard__right{
     width: 100px; 
     height: 315px; 
-    left: 18%; 
+    left: 20%; 
     top: 120px;
     font-size: 80px;
     font-weight: 700;
@@ -57,7 +57,7 @@ body{
 .scoreboard__left{
     width: 100px; 
     height: 315px; 
-    left: 68%; 
+    left: 70%; 
     top: 120px; 
     font-size: 80px;
     font-weight: 700;
@@ -116,16 +116,4 @@ body{
     left: 156px;
     top: 0px;
     background: var(--yellow);
-}
-
-@media (max-width:360) {
-    .scoreboard__right{
-        position: absolute;
-        left: auto;
-    }
-
-    .scoreboard__left{
-        position: absolute;
-        left: auto;
-    }
 }
