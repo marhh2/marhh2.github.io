@@ -22,44 +22,44 @@ choose.forEach((e)=>{
     }, false);
     
 function mouseSwipped() {
-        let angka = parseInt(e.textContent);
+        let choose = parseInt(e.textContent);
         if (Math.abs(mouseupX - mousedownX) > 0 || Math.abs(mouseupY - mousedownY) > 0) {
-            if(mouseupY < mousedownY && angka < 25) {
-                let isiA = angka + 1;
-                if (isiA < 10) {
-                  e.innerHTML = `0${isiA}`;
+            if(mouseupY < mousedownY && choose < 25) {
+                let content = choose + 1;
+                if (content < 10) {
+                  e.innerHTML = `0${content}`;
                 } else {
-                  e.innerHTML = isiA;
+                  e.innerHTML = content;
                 }
               }
-              if(mouseupY > mousedownY && angka > 0) {
-                let isiA = angka - 1;
-                if (isiA < 10) {
-                  e.innerHTML = `0${isiA}`;
+              if(mouseupY > mousedownY && choose > 0) {
+                let content = choose - 1;
+                if (content < 10) {
+                  e.innerHTML = `0${content}`;
                 } else {
-                  e.innerHTML = isiA;
+                  e.innerHTML = content;
                 }
               } 
           }
     }
 function touchSwipped() {
-        let angka = parseInt(e.textContent);
-        if(touchendY < touchstartY && angka<25) {
-            let isiA = angka+1;
-            if(isiA<10){
-                e.innerHTML = `0${isiA}`;
+        let choose = parseInt(e.textContent);
+        if(touchendY < touchstartY && choose<25) {
+            let content = choose+1;
+            if(content<10){
+                e.innerHTML = `0${content}`;
             }
             else{
-                e.innerHTML = isiA;
+                e.innerHTML = content;
             }
         }       
-        if(touchendY > touchstartY && angka>0) {  
-            let isiA = angka-1;
-            if(isiA<10){
-                e.innerHTML = `0${isiA}`;
+        if(touchendY > touchstartY && choose>0) {  
+            let content = choose-1;
+            if(content<10){
+                e.innerHTML = `0${content}`;
             }
             else{
-            e.innerHTML = isiA;
+            e.innerHTML = content;
             }
         }
     }
